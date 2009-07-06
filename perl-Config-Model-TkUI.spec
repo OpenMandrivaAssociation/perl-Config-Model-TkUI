@@ -14,6 +14,7 @@ BuildRequires: perl(Config::Model)
 BuildRequires: perl(Tk::DirSelect)
 BuildRequires: perl(Tk::ObjScanner)
 BuildRequires: perl(Exception::Class)
+BuildRequires: perl(Carp::Assert::More)
 BuildRequires: x11-server-xvfb
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
