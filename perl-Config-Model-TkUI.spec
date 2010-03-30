@@ -11,12 +11,13 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Carp::Assert::More)
+BuildRequires: perl(Exception::Class)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Config::Model)
+BuildRequires: perl(Pod::POM)
 BuildRequires: perl(Tk::DirSelect)
 BuildRequires: perl(Tk::ObjScanner)
-BuildRequires: perl(Exception::Class)
-BuildRequires: perl(Carp::Assert::More)
 BuildRequires: x11-server-xvfb
 
 BuildArch: noarch
