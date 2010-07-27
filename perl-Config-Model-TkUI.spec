@@ -1,5 +1,5 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.306
+%define upstream_version 1.308
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
