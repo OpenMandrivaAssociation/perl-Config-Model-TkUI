@@ -1,5 +1,5 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.308
+%define upstream_version 1.309
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -40,7 +40,7 @@ configuration files (e.g. '/etc/X11/xorg.conf').
 ./Build
 
 %check
-xvfb-run ./Build test
+xvfb-run -n 12 ./Build test
 
 %install
 rm -rf %buildroot
