@@ -18,6 +18,7 @@ BuildRequires: perl(Config::Model)
 BuildRequires: perl(Pod::POM)
 BuildRequires: perl(Tk::DirSelect)
 BuildRequires: perl(Tk::ObjScanner)
+BuildRequires: perl(Test::Warn)
 BuildRequires: x11-server-xvfb
 
 BuildArch: noarch
