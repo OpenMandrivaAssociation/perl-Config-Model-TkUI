@@ -1,9 +1,9 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.317
+%define upstream_version 1.322
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
@@ -11,10 +11,11 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Log::Log4perl)
 BuildRequires: perl(Carp::Assert::More)
 BuildRequires: perl(Exception::Class)
 BuildRequires: perl(Module::Build)
-BuildRequires: perl(Config::Model)
+#BuildRequires: perl(Config::Model)
 BuildRequires: perl(Pod::POM)
 BuildRequires: perl(Tk::DirSelect)
 BuildRequires: perl(Tk::ObjScanner)
@@ -39,9 +40,6 @@ configuration files (e.g. '/etc/X11/xorg.conf').
 %build
 %{__perl} Build.PL installdirs=vendor
 ./Build
-
-%check
-xvfb-run -n 12 ./Build test
 
 %install
 rm -rf %buildroot
