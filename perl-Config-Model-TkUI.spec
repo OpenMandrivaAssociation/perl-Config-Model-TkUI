@@ -1,9 +1,9 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.322
+%define upstream_version 1.323
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
