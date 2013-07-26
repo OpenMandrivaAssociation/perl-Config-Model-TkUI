@@ -1,15 +1,15 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.325
+%define upstream_version 1.339
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %perl_convert_version 1.339
+Release:    1
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Config/Config-Model-TkUI-1.339.tar.gz
 
 BuildRequires: perl(Log::Log4perl)
 BuildRequires: perl(Carp::Assert::More)
@@ -128,4 +128,5 @@ rm -rf %buildroot
 
 * Mon Jul 06 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.0.0-1mdv2010.0
 - initial mdv release, generated with cpan2dist
+
 
