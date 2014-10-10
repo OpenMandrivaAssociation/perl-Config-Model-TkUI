@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 1.339
-Release:    1
+Release:    2
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
