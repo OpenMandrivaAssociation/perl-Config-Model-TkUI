@@ -46,6 +46,6 @@ perl Build.PL installdirs=vendor
 %clean
 
 %files
-%doc ChangeLog README
+%doc  README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
