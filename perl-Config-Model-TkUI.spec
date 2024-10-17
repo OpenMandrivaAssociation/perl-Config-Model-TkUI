@@ -8,7 +8,7 @@ Release:    3
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Config/Config-Model-TkUI-1.339.tar.gz
 
 BuildRequires: perl(Log::Log4perl)
