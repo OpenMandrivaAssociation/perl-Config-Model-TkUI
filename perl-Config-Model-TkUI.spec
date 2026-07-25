@@ -1,15 +1,15 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.339
+%define upstream_version 1.381
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.339
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Config/Config-Model-TkUI-1.339.tar.gz
+Url:        https://github.com/dod38fr/config-model/wiki
+Source0:    https://cpan.metacpan.org/authors/id/D/DD/DDUMONT/Config-Model-TkUI-1.381.tar.gz
 
 BuildRequires: perl(Log::Log4perl)
 BuildRequires: perl(Carp::Assert::More)
