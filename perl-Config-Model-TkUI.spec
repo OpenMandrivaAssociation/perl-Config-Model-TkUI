@@ -1,9 +1,7 @@
 %define upstream_name    Config-Model-TkUI
-%define upstream_version 1.381
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    1.381
+Release:    2
 
 Summary:    GUI for conf editors based on Config::Model
 License:    GPL+ or Artistic
@@ -35,7 +33,7 @@ model (like the Config::Model::Xorg manpage), you get a tool to edit
 configuration files (e.g. '/etc/X11/xorg.conf').
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 %{__perl} Build.PL installdirs=vendor
